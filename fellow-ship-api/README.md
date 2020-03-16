@@ -14,6 +14,8 @@
 
 &nbsp;&nbsp;&nbsp;[Miscellaneous Files](#miscellaneous-files)
 
+[Use](#use)
+
 [API Routes](#api-routes)
 
 ## Project Structure
@@ -79,6 +81,34 @@ This file describes the tasks expected when the app is deployed.
 #### Webpack Config
 
 This function is executed when the app is deployed in production mode, minifying the code and placing it in a separate directory.
+
+## Use
+
+### Development
+
+#### Requirements
+
+_nodemon_ and _yarn_ must be installed globally
+
+#### Launching
+
+Upgrade your packages with `yarn` command
+Launch the app with `yarn dev`
+
+#### Database
+
+The app in development environment is configured to hit on the 3306 port of you localhost.
+The default user is _root_ and the password is empty. The base is fellowship and you can get it from the _sql_ directory.
+
+### Production
+
+#### Requirements
+
+_pm2_ must be installed globally
+
+#### Deployment
+
+Use `pm2 deploy [environment]` where _environment_ is either _integration_ or _production_
 
 ## API Routes
 
