@@ -1,0 +1,36 @@
+{
+  "apps": [
+    {
+      "name": "fellow-ship-api",
+      "script": "./dist/main.js",
+      "log_date_format": "YYYY-MM-DD HH:mm Z",
+      "env_development": {
+        "NODE_ENV": "development"
+      },
+      "env_integration": {
+        "NODE_ENV": "integration"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "integration": {
+      "user": "fellowship",
+      "host": "51.38.32.198",
+      "ref": "origin/master",
+      "repo": "git@github.com:VincentLinet/FellowShip.git",
+      "path": "/home/fellowship/integration/apps/",
+      "post-deploy": "yarn && cd fellow-ship-api && yarn build && pm2 startOrRestart ecosystem.json --env integration"
+    },
+    "production": {
+      "user": "fellowship",
+      "host": "51.38.32.198",
+      "ref": "origin/master",
+      "repo": "git@github.com:VincentLinet/FellowShip.git",
+      "path": "/home/fellowship/production/apps/",
+      "post-deploy": "yarn && cd fellow-ship-api && yarn build && pm2 startOrRestart ecosystem.json --env production"
+    }
+  }
+}

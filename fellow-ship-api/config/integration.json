@@ -1,0 +1,15 @@
+{
+  "app": {
+    "port": 9012
+  },
+  "databases": {
+    "default": {
+      "host": "localhost",
+      "user": "fellowship",
+      "password": "fellowship",
+      "database": "fellowship",
+      "port": 3306,
+      "connectionLimit": 100
+    }
+  }
+}
