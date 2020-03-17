@@ -68,4 +68,4 @@ git commit -m ""
 ...
 ```
 
-⋅⋅⋅This will result to avoid the default merge behaviour that is splashing unreadable data and useless commit messages to the tree.
+This will result to avoid the default merge behaviour that is splashing unreadable data and useless commit messages to the tree.

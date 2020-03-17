@@ -88,7 +88,8 @@ This function is executed when the app is deployed in production mode, minifying
 
 #### Requirements
 
-_nodemon_ and _yarn_ must be installed globally
+_nodemon_ and _yarn_ must be installed globally.
+You need to add NODE_ENV="development" in your environment.
 
 #### Launching
 
@@ -97,7 +98,7 @@ Launch the app with `yarn dev`
 
 #### Database
 
-The app in development environment is configured to hit on the 3306 port of you localhost.
+The app in development environment is configured to hit on the port 3306 of the localhost.
 The default user is _root_ and the password is empty. The base is fellowship and you can get it from the _sql_ directory.
 
 ### Production
