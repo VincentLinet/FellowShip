@@ -24,11 +24,11 @@ const SearchBar = ({ placeholder = "Rechercher...", data = [], search, searchRes
 
 	const renderList = (key) => {
 		return (
-			result[key].length > 0 ? result[key].map(({name}, index) => (
+			result[key].map(({name}, index) => (
 				<div key={index} onClick={select(name)}>
 					<div className="el_list">{name}</div>
 				</div>
-			)) : null
+			))
 		)
 	};
 
@@ -36,10 +36,10 @@ const SearchBar = ({ placeholder = "Rechercher...", data = [], search, searchRes
 		return (
 			<div className="list">
 				{Object.keys(result).map((key, index) => (
-					<div key={index}>
+					result[key].length > 0 ? <div key={index}>
 						<h2 className="el_list_title">{key}</h2>
 						{ renderList(key) }
-					</div>
+					</div> : null
 				))}
 			</div>
 		);
