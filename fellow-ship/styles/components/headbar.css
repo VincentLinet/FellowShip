@@ -23,3 +23,7 @@
 .name {
   font-weight: 700;
 }
+
+.list{
+  position: absolute;
+}

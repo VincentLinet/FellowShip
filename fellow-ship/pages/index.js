@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 
 import HeadBar from "../src/components/HeadBar";
@@ -6,6 +6,8 @@ import HeadBar from "../src/components/HeadBar";
 import "../styles/design.css";
 
 const App = ({ ...props }) => {
+  const [result, setResult] = useState("TOTO");
+
   return (
     <>
       <Head>
@@ -13,7 +15,8 @@ const App = ({ ...props }) => {
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <div className="app">
-        <HeadBar />
+        <HeadBar searchResult={setResult}/>
+        <h1>{ result }</h1>
       </div>
     </>
   );
