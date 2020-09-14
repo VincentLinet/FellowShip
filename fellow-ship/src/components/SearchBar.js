@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import Input from "./common/Input";
 
-const SearchBar = ({ placeholder = "Rechercher...", data = [], search, searchResult, ...props }) => {
+const SearchBar = ({ placeholder = "Rechercher...", search, searchResult, ...props }) => {
 	const [result, setResult] = useState({});
 	const [value, setValue] = useState("");
 
@@ -18,14 +18,14 @@ const SearchBar = ({ placeholder = "Rechercher...", data = [], search, searchRes
 
 	const getResult = () => value.length < 3 ? [] : search(value);
 
-	const select = (name) => () => searchResult(name);
+	const select = (obj) => () => searchResult(obj);
 
 	const onChange = (value) => setValue(value);
 
 	const renderList = (key) => {
 		return (
 			result[key].map(({name}, index) => (
-				<div key={index} onClick={select(name)}>
+				<div key={index} onClick={select(result[key][index])}>
 					<div className="el_list">{name}</div>
 				</div>
 			))

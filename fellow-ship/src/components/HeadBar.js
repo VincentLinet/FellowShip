@@ -23,6 +23,10 @@ const HeadBar = ({ ...props }) => {
         return {users: users, cities: cities};
     };
 
+    const setRes = (obj) => {
+        props.searchResult(obj.name);
+    };
+
     return (
         <div className="headbar">
             <div className="title">
@@ -31,7 +35,7 @@ const HeadBar = ({ ...props }) => {
                 </div>
                 <div className="name">FellowShip</div>
             </div>
-            <SearchBar search={search} searchResult={props.searchResult}/>
+            <SearchBar search={search} searchResult={setRes}/>
             {/*<SearchBar data={data} searchResult={props.searchResult}/>*/}
         </div>
     );

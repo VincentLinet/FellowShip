@@ -43,31 +43,31 @@ const data = {
 			ville: "Paris"
 		}],
 	cities: [{
-			name: "Paris"
+			name: "Marais"
 		},{
-		name: "Paris"
+		name: "Pedroville"
 		},{
-		name: "Paris"
+		name: "Pedriville"
 		},{
-		name: "Paris"
+		name: "Pedraville"
 		},{
-		name: "Paris"
+		name: "Marakech"
 		},{
-		name: "Paris"
+		name: "Tourcoin"
 		},{
-		name: "Paris"
+		name: "Pedruville"
 		},{
-		name: "Paris"
+		name: "Lyon"
 		},{
-		name: "Paris"
+		name: "Valence"
 		},{
-		name: "Paris"
+		name: "Lisbonne"
 		},{
-		name: "Paris"
+		name: "Budapeste"
 		},{
-		name: "Paris"
+		name: "Pekin"
 		},{
-		name: "Paris"
+		name: "Bordeau"
 		},{
 		name: "Paris"
 		}]
