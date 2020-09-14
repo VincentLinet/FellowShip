@@ -3,13 +3,8 @@
     "port": 9000
   },
   "databases": {
-    "default": {
-      "host": "localhost",
-      "user": "root",
-      "password": "",
-      "database": "fellowship",
-      "port": 3306,
-      "connectionLimit": 100
+    "mongoDB": {
+      "uri": "mongodb+srv://root:root@fellowshipcluster.emacn.mongodb.net/"
     }
   }
 }

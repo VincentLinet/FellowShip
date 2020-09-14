@@ -1,11 +1,16 @@
-import express from "express";
+const express = require("express");
 
-import { validateParams } from "../services/validation";
-import { getMasters } from "../controllers/user";
-import { masters } from "../schemas/user";
+const { validateBody, validateParams } = require("../services/validation");
+const { createUser, getMasters } = require("../controllers/user");
+const { masters, register } = require("../schemas/user");
 
 const router = express.Router();
 
-router.get("/masters", validateParams(masters), getMasters);
+/**
+ * /api/user
+ */
 
-export default router;
+router.get("/masters", validateParams(masters), getMasters);
+router.post("/register", validateBody(register), createUser);
+
+module.exports = router;
