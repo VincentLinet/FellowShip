@@ -4,6 +4,7 @@ const helmet = require("helmet");
 const config = require("config");
 const bodyParser = require("body-parser");
 const mongoDB = require('./services/database/database');
+const swaggerConfig = require('./swagger/swaggerConfig');
 
 const userRoute = require("./routes/user");
 
@@ -17,6 +18,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api/user", userRoute);
+app.use("/api-docs", swaggerConfig);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
