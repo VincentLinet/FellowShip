@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-import HeadBar from "../src/components/HeadBar";
+import HeadBar from "../src/components/layout/HeadBar";
 
 import "../styles/design.css";
 

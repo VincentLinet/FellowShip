@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  border: 1px solid #00a99d;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.search__logo {
+  display: flex;
+  flex: 0 0 24px;
+  justify-content: center;
+  align-items: center;
+  color: #00a99d;
+}
+.search__input {
+  flex: 1 1 auto;
+  max-width: 189px;
+  padding-left: 10px;
+}
+.search__input:nth-child(n + 3) {
+  border-left: 1px solid #00a99d;
+}

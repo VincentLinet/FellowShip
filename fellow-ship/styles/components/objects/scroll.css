@@ -1,0 +1,40 @@
+.scroll {
+  position: relative;
+  height: 16px;
+}
+.scroll__bar {
+  position: absolute;
+  height: 10px;
+  width: 258px;
+  background-color: #fafafa;
+  margin: 3px 0;
+  top: 0;
+}
+.scroll__bar__filled {
+  position: absolute;
+  height: 10px;
+  width: 64px;
+  background-color: #00a99d;
+  top: 3px;
+}
+.scroll__cursor--left,
+.scroll__cursor--right {
+  position: absolute;
+  background-color: #00a99d;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  top: 0;
+}
+.scroll__cursor--left {
+  left: -8px;
+}
+.scroll__cursor--right {
+  left: 56px;
+}
+/* .scroll__cursor--left {
+  left: -8px;
+}
+.scroll__cursor--right {
+  left: 8px;
+} */

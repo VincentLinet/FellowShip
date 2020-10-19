@@ -1,0 +1,15 @@
+.filter {
+  padding: 12px 0;
+}
+
+.filter__title {
+  font-weight: 600;
+}
+
+.filter__content {
+  padding: 24px 0 0;
+}
+
+.filter__content > div:nth-child(n + 1) {
+  margin-top: 12px;
+}
