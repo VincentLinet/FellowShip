@@ -1,0 +1,36 @@
+.headbar {
+  flex: 0 0 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #00a99d;
+}
+
+.title {
+  display: flex;
+}
+
+.title .name {
+  font-size: 35px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+.headbar .logo {
+  display: flex;
+  padding: 0 5px 0 15px;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+}
+
+.headbar .logo svg {
+  width: 35px;
+  height: 35px;
+}
+
+.headbar .login {
+  display: flex;
+  padding: 5px;
+}

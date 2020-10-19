@@ -1,0 +1,20 @@
+.day-picker {
+  display: flex;
+  height: 10px;
+}
+
+.day-picker__day {
+  flex: 0 0 30px;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out;
+}
+
+.day-picker__day:not(.day-picker__day--blocked):hover,
+.day-picker__day--selected {
+  background-color: #00a99d;
+}
+
+.day-picker__day:not(:first-child) {
+  margin-left: 8px;
+}

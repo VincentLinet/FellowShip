@@ -1,0 +1,129 @@
+.button {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  margin: 5px;
+}
+
+.primary {
+  color: white;
+}
+
+.secondary {
+  color: white;
+}
+
+.tertiary {
+  background-color: transparent;
+  color: #00a99d;
+}
+
+.button.primary,
+.button.primary:before,
+.button.primary:after,
+.button.primary > div:before,
+.button.primary > div:after {
+  background: #00a99d;
+}
+
+.button.primary:hover {
+  color: #00a99d;
+}
+
+.button.secondary,
+.button.secondary:before,
+.button.secondary:after,
+.button.secondary > div:before,
+.button.secondary > div:after {
+  background: #fbb03b;
+}
+
+.button.secondary:hover {
+  color: #fbb03b;
+}
+
+.button.tertiary {
+  background: #ffffff;
+  color: #00a99d;
+}
+
+.button.tertiary:before,
+.button.tertiary:after,
+.button.tertiary > div:before,
+.button.tertiary > div:after {
+  background: #00a99d;
+}
+
+.button.filled {
+  line-height: 38px;
+  padding: 0;
+  border: none;
+}
+.button.filled > div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.button.filled:before,
+.button.filled:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  box-shadow: -3px -3px 20px 0px rgba(255, 255, 255, 0.9), -2px -2px 5px 0px rgba(255, 255, 255, 0.9),
+    3px 3px 20px 0px rgba(0, 0, 0, 0.2), 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.button.filled:before {
+  height: 0%;
+  width: 2px;
+}
+.button.filled:after {
+  width: 0%;
+  height: 2px;
+}
+.button.filled:hover {
+  background: transparent;
+}
+.button.filled:hover:before {
+  height: 100%;
+}
+.button.filled:hover:after {
+  width: 100%;
+}
+.button.filled > div:before,
+.button.filled > div:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  box-shadow: -3px -3px 20px 0px rgba(255, 255, 255, 0.9), -2px -2px 5px 0px rgba(255, 255, 255, 0.9),
+    3px 3px 20px 0px rgba(0, 0, 0, 0.2), 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.button.filled > div:before {
+  width: 2px;
+  height: 0%;
+}
+.button.filled > div:after {
+  height: 2px;
+  width: 0%;
+}
+.button.filled > div:hover:before {
+  height: 100%;
+}
+.button.filled > div:hover:after {
+  width: 100%;
+}

@@ -1,0 +1,32 @@
+.toggle {
+  display: flex;
+}
+
+.toggle__choice {
+  flex: 0 0 70px;
+  padding: 8px;
+  color: #00a99d;
+  border: 1px solid #00a99d;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out, color 0.16s ease-in-out;
+}
+
+.toggle__choice:first-child {
+  border-radius: 8px 0 0 8px;
+}
+
+.toggle__choice:last-child {
+  border-radius: 0 8px 8px 0;
+}
+
+.toggle__choice.active,
+.toggle__choice:hover {
+  background-color: #00a99d;
+  color: #ffffff;
+}
+
+.toggle__choice:not(:first-child) {
+  border-left: none;
+}

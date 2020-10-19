@@ -1,0 +1,95 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 420px;
+  width: 300px;
+  border-radius: 18px;
+  margin: 34px 4px 4px 34px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+
+.card.card__price {
+  margin: 30px 0px 0px 30px;
+  border: 5px solid #00a99d;
+}
+
+.card__picture {
+  position: relative;
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__picture__image {
+  position: absolute;
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 16px 16px 0 0;
+}
+
+.card__price .card__picture__image {
+  border-radius: 13px 13px 0 0;
+}
+
+.card__picture__price {
+  padding: 5px 15px;
+  background-color: #00a99d;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0 0 8px 8px;
+  z-index: 2;
+}
+
+.card__picture__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.card__picture__name {
+  color: #00a99d;
+}
+
+.card__picture__city {
+  color: #fbb03b;
+}
+
+.card__description {
+  flex: 0 0 110px;
+  max-height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.card__description__days {
+  width: 270px;
+}
+
+.card__description__adventurers {
+  font-weight: bold;
+}
+
+.card__description__keywords {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
+
+.card__description__keyword {
+  background-color: #cccccc;
+  padding: 5px 8px;
+  border-radius: 19px;
+  margin: 2px;
+}

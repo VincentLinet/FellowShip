@@ -1,0 +1,13 @@
+.results-info {
+  padding: 10px 0;
+}
+.results-info > div {
+  padding: 5px 0;
+}
+.results-info__information {
+  font-size: 24px;
+}
+.results-info__help {
+  font-size: 16px;
+  color: #999999;
+}

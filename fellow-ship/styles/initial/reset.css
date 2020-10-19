@@ -20,6 +20,17 @@ a:visited {
 
 input {
   font-family: "Montserrat";
+  background-color: transparent;
+  cursor: text;
+  margin: 0em;
+  font: inherit;
+  padding: 1px 2px;
+  border: none;
+  border-image: none;
+}
+
+input::placeholder {
+  color: #aaaaaa;
 }
 
 input:focus {
