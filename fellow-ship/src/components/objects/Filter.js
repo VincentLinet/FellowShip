@@ -1,9 +1,11 @@
 import React from "react";
 
-const Filter = ({ title, children }) => {
+import classnames from "classnames";
+
+const Filter = ({ title, children, padded }) => {
   return (
-    <div className="filter">
-      <div className="filter__title">{title}</div>
+    <div className={classnames("filter", { filter__padded: padded })}>
+      {!!title && <div className="filter__title">{title}</div>}
       <div className="filter__content">{children}</div>
     </div>
   );

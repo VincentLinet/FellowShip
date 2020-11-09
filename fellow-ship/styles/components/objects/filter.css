@@ -6,8 +6,8 @@
   font-weight: 600;
 }
 
-.filter__content {
-  padding: 24px 0 0;
+.filter__padded .filter__content {
+  padding: 12px 0 0;
 }
 
 .filter__content > div:nth-child(n + 1) {

@@ -7,6 +7,7 @@
   margin: 34px 4px 4px 34px;
   background-color: #ffffff;
   border: 1px solid #cccccc;
+  cursor: pointer;
 }
 
 .card.card__price {
@@ -35,7 +36,7 @@
   border-radius: 13px 13px 0 0;
 }
 
-.card__picture__price {
+.card__picture__price:not(:empty) {
   padding: 5px 15px;
   background-color: #00a99d;
   color: #ffffff;

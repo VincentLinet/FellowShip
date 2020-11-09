@@ -2,6 +2,7 @@ import React from "react";
 import Head from "next/head";
 
 import HeadBar from "../src/components/layout/HeadBar";
+import HeadPicture from "../src/components/layout/HeadPicture";
 
 import "../styles/design.css";
 
@@ -14,6 +15,7 @@ const App = ({ ...props }) => {
       </Head>
       <div className="app">
         <HeadBar />
+        <HeadPicture />
       </div>
     </>
   );

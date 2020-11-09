@@ -9,6 +9,7 @@
 
 .title {
   display: flex;
+  cursor: pointer;
 }
 
 .title .name {

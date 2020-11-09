@@ -1,0 +1,20 @@
+.bold-input {
+  display: flex;
+  height: 35px;
+  align-self: stretch;
+  margin: 0px 5px;
+}
+
+.bold-input__label {
+  flex: 0 0 100px;
+  display: flex;
+  align-items: center;
+  background-color: #00a99d;
+  color: #ffffff;
+  border-radius: 5px 0 0 5px;
+  padding: 0 10px;
+}
+
+.bold-input > input {
+  border: 1px solid #00a99d;
+}

@@ -1,0 +1,55 @@
+.signin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 85px;
+  right: 5px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 15px;
+  z-index: 1;
+}
+
+.signin__inner {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.signin__inner > *:not(:first-child) {
+  margin-top: 20px;
+}
+
+.signin__inner > input {
+  position: relative;
+  align-self: stretch;
+  border: 1px solid #00a99d;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 10px;
+  margin: 1px 5px;
+  transition: border 0.16s ease-in-out, margin 0.16s ease-in-out;
+}
+
+.signin__inner > input:focus {
+  border: 2px solid #00a99d;
+  margin: 0 4px;
+}
+
+.signin__actions {
+  display: flex;
+}
+
+.signin__actions > .button {
+  margin: 0 5px;
+}
+
+.signin__passreset {
+  font-size: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
