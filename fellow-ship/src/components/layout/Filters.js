@@ -23,11 +23,13 @@ const Filters = () => {
       <div className="filters__inner">
         <Search placeholders={["D&D", "Lyon"]}></Search>
         <ResultInfo number={5} type="Game Master"></ResultInfo>
-        <Toggle buttons={GRADE} onChange={setGrade} />
-        <Filter title="Availability">
+        <Filter>
+          <Toggle buttons={GRADE} onChange={setGrade} />
+        </Filter>
+        <Filter title="Availability" padded>
           <DayPicker days="0010100" />
         </Filter>
-        <Filter title="Adventurers">
+        <Filter title="Adventurers" padded>
           <Scroll />
         </Filter>
         <Filter title="Ruleset">
@@ -39,7 +41,7 @@ const Filters = () => {
         <Filter title="Ruleset">
           <CheckList list={LANGUAGE}></CheckList>
         </Filter>
-        <Filter title="Community Skills">
+        <Filter title="Community Skills" padded>
           <Toggle buttons={FOOD} />
           <Toggle buttons={SMOKER} />
           <Toggle buttons={ALCOHOL} />
