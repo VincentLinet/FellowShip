@@ -7,12 +7,14 @@
 @import "./components/layout/headbar.css";
 @import "./components/layout/results.css";
 @import "./components/layout/sidebar.css";
+@import "./components/layout/seance.css";
 @import "./components/layout/result-info.css";
 @import "./components/layout/signin.css";
 
 @import "./components/objects/boldinput.css";
 @import "./components/objects/card.css";
 @import "./components/objects/group.css";
+@import "./components/objects/player.css";
 @import "./components/objects/checklist.css";
 @import "./components/objects/daypicker.css";
 @import "./components/objects/button.css";
