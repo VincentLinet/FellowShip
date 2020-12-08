@@ -7,7 +7,7 @@ export const validateBody = schema => ({ body }, res, next) => {
   }
 };
 export const validateParams = schema => ({ params }, res, next) => {
-  const { error } = schema.validate(body);
+  const { error } = schema.validate(params);
   if (error) {
     next(error);
   } else {
