@@ -127,7 +127,7 @@ const App = ({ seances, ...props }) => {
 			<div className="app">
 				<HeadBar />
 				<Content>
-					<SideBar seance={seances}/>
+					<SideBar groups={seances}/>
 				</Content>
 			</div>
 		</>

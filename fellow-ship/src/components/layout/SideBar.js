@@ -1,12 +1,12 @@
-import Seance from "../objects/Seance";
+import Group from "../objects/Group";
 import React from "react";
 
-const renderSeance = (seances) => {
-	return seances.map((seance) => <Seance key={seance.id} {...seance} />);
+const renderGroup = (groups) => {
+	return groups.map((seance) => <Group key={seance.id} {...seance} />);
 };
 
-const SideBar = ({ seance }) => {
-	return <div className="sidebar">{renderSeance(seance)}</div>;
+const SideBar = ({ groups }) => {
+	return <div className="sidebar">{renderGroup(groups)}</div>;
 };
 
 export default SideBar;

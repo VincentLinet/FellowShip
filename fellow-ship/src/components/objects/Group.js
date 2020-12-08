@@ -1,7 +1,7 @@
 import DayPicker from "./DayPicker";
 import React from "react";
 
-const Seance = ({ id, title, description, location, recurrence}) => {
+const Group = ({ id, title, description, location, recurrence}) => {
 	return (
 		<div className="seance">
 			<div className="seance__title">{`${title}`}</div>
@@ -13,4 +13,4 @@ const Seance = ({ id, title, description, location, recurrence}) => {
 	);
 };
 
-export default Seance;
+export default Group;
