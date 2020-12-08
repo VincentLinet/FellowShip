@@ -1,18 +1,24 @@
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
-import config from "config";
-import bodyParser from "body-parser";
+const express = require("express");
+const cors = require("cors");
+const helmet = require("helmet");
+const config = require("config");
+const bodyParser = require("body-parser");
+const mongoDB = require('./services/database/database');
+const swaggerConfig = require('./swagger/swaggerConfig');
 
-import userRoute from "./routes/user";
+const userRoute = require("./routes/user");
 
 const app = express();
+
+// ------ Database connection ------
+mongoDB.mongoConnect('fellowship').catch(error => console.error(error));
 
 app.use(helmet());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api/user", userRoute);
+app.use("/api-docs", swaggerConfig);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
