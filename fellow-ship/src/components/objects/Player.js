@@ -2,14 +2,13 @@ import React, {cloneElement, useState} from "react";
 
 const Player = ({ id, username, firstname, lastname, rate, picture, description, exp, role, classe, niveau}) => {
 	const [visuDetail, setVisuDetail] = useState(false);
-	const [select, setSelect] = useState(null);
 
 	const toggleDetail = () => setVisuDetail(!visuDetail);
 
 	const renderDetail = () => (
 		<div className="player__detail">
-			<div className="player__detail__classe">{ `${classe} niveau ${niveau}`}</div>
-			<div className="player__detail__classe">{ `${description}`}</div> {/*a remplacer par le nombre de seance*/}
+			<div className="player__detail__classe">{!role && `${classe} niveau ${niveau}`}</div>
+			<div className="player__detail__classe">{`${description}`}</div> {/*a remplacer par le nombre de seance*/}
 		</div>
 	);
 

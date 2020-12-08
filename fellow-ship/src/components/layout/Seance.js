@@ -3,7 +3,8 @@ import Group from "../objects/Group";
 import React from "react";
 
 const renderUser = (players) => {
-	return players.map((player) => <Player key={player.id} {...player} />);
+	if (players)
+		return players.map((player) => <Player key={player.id} {...player} />);
 };
 
 const Seance = ({ seance }) => {
