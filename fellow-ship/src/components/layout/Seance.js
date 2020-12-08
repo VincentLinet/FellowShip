@@ -1,13 +1,21 @@
 import Player from "../objects/Player";
 import Group from "../objects/Group";
-import React from "react";
-
-const renderUser = (players) => {
-	if (players)
-		return players.map((player) => <Player key={player.id} {...player} />);
-};
+import React, {cloneElement, useState} from "react";
 
 const Seance = ({ seance }) => {
+	const [playerSelect, setPlayerSelect] = useState(null);
+
+	const  selectPlayer = (id) => {
+		seance.players.map((player) => {
+			if (player.id == id)
+				setPlayerSelect(player);
+		})
+	};
+	const renderUser = (players) => {
+		if (players)
+			return players.map((player) => <Player key={player.id} selected={playerSelect.id == player.id} select={selectPlayer} {...player} />);
+	};
+
 	return (
 		<div className="seance">
 			<div className="seance__players">

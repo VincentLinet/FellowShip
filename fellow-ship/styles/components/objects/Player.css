@@ -79,3 +79,21 @@
     color: #333333;
     mix-blend-mode: normal;
 }
+
+.player.selected{
+    background: #00A99D;
+}
+
+.player.selected .player__info .player__info__username{
+    color: #FFFFFF;
+}
+
+.player.selected .player__info .player__info__classe{
+    color: #DBFFFC;
+    opacity: 1;
+}
+
+.player.selected .player__info .player__info__experience{
+    color: #DBFFFC;
+    opacity: 1;
+}

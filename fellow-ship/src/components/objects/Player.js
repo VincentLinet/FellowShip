@@ -1,9 +1,11 @@
 import React, {cloneElement, useState} from "react";
+import classnames from "classnames";
 
-const Player = ({ id, username, firstname, lastname, rate, picture, description, exp, role, classe, niveau}) => {
+const Player = ({ id, username, firstname, lastname, rate, picture, description, exp, role, classe, niveau, selected, select}) => {
 	const [visuDetail, setVisuDetail] = useState(false);
 
 	const toggleDetail = () => setVisuDetail(!visuDetail);
+	const selectPlayer = () => select(id)
 
 	const renderDetail = () => (
 		<div className="player__detail">
@@ -13,7 +15,7 @@ const Player = ({ id, username, firstname, lastname, rate, picture, description,
 	);
 
 	return (
-		<div className="player" onDoubleClick={toggleDetail}>
+		<div className={classnames("player", { selected: !!selected })} onDoubleClick={toggleDetail} onClick={selectPlayer}>
 			<div className="player__picture">
 				{/*ajouter la photo*/}
 			</div>
