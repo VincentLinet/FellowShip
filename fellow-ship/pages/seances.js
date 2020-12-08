@@ -178,7 +178,6 @@ const App = ({ seances, ...props }) => {
 	const [seance, setSeance] = useState(Seances[0]);
 
 	const deSelectGroup = () => setSeance(null);
-
 	const selectVisuGroup = (id) => {
 		seances.map((seance) => {
 			if (seance.id == id)

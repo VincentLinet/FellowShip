@@ -3,17 +3,12 @@ import Group from "../objects/Group";
 import React, {cloneElement, useState} from "react";
 
 const Seance = ({ seance }) => {
-	const [playerSelect, setPlayerSelect] = useState(null);
+	const [playerSelectId, setPlayerSelectId] = useState(null);
 
-	const  selectPlayer = (id) => {
-		seance.players.map((player) => {
-			if (player.id == id)
-				setPlayerSelect(player);
-		})
-	};
+	const  selectPlayer = (id) => setPlayerSelectId(id);
 	const renderUser = (players) => {
 		if (players)
-			return players.map((player) => <Player key={player.id} selected={playerSelect.id == player.id} select={selectPlayer} {...player} />);
+			return players.map((player) => <Player key={player.id} selected={playerSelectId == player.id} select={selectPlayer} {...player} />);
 	};
 
 	return (
