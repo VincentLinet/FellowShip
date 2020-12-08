@@ -33,7 +33,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 16px;
 
     color: #333333;
@@ -43,7 +43,7 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 16px;
     padding: 5px;
 
@@ -51,8 +51,31 @@
     opacity: 0.5;
 }
 
+.player .player__info .player__info__experience{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #555555;
+
+    mix-blend-mode: normal;
+}
+
 .player .player__detail{
     /*width: 100%;*/
     /*height: 50px;*/
-    background: #09f6e7;
+    padding: 5px;
+}
+
+.player .player__detail .player__detail__classe{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+
+    color: #333333;
+    mix-blend-mode: normal;
 }
