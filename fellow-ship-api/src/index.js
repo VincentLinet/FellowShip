@@ -4,7 +4,7 @@ const helmet = require("helmet");
 const config = require("config");
 const bodyParser = require("body-parser");
 const mongoDB = require('./services/database/database');
-
+const gameRoute = require ('./routes/games');
 const userRoute = require("./routes/user");
 
 const app = express();
@@ -17,6 +17,7 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use("/api/user", userRoute);
+app.use("/api/game", gameRoute);
 
 app.use((req, res, next) => {
   const err = new Error("Not Found");
