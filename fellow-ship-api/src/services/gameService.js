@@ -1,8 +1,8 @@
-const bcrypt = require("bcryptjs");
-const Game = require("../models/game");
+const Game = require("../models/games");
 
 export const createGameService = async (params) => {
   return new Promise(async (resolve, reject) => {
+    console.log("[SERVICE] - Creating a new game.")
     const existingGame = await Game.findOne({ name: params.name });
     if (existingGame) {
       reject('Game already exists in database.');
@@ -10,7 +10,6 @@ export const createGameService = async (params) => {
       let game = new Game({
         name: params.name
       });
-
       game.save().then(createdGame => {
         resolve(createdGame);
       }).catch(error => {
@@ -20,15 +19,13 @@ export const createGameService = async (params) => {
   });
 };
 
-
-export const findGameService = async (params) => {
+export const findGameService = async () => {
   return new Promise(async (resolve, reject) => {
     const foundGame = await Game.find();
     try {
-          resolve(createdGame);
-        }
-      catch (error) {
+      resolve(foundGame);
+    } catch (error) {
       reject(error);
-      }
+    }
   });
 };
