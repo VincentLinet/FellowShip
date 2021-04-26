@@ -4,7 +4,7 @@ import Head from "next/head";
 import HeadBar from "../src/components/layout/HeadBar";
 import Content from "../src/components/layout/Content";
 import SideBar from "../src/components/layout/SideBar";
-import Seance from "../src/components/layout/seance";
+import Session from "../src/components/layout/Session";
 import Group from "../src/components/objects/Group";
 
 import "../styles/design.css";
@@ -248,7 +248,7 @@ const App = ({ seances, ...props }) => {
             <Group {...seance} header />
             <div className="lists">
               <SideBar groups={available} selectGroup={selectVisuGroup} />
-              <Seance seance={seance} openSelection={openSelection} />
+              <Session seance={seance} openSelection={openSelection} />
               {/* {!!seance && <Button action={deSelectGroup}>Retour</Button>} */}
             </div>
           </div>
