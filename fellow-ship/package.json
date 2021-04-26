@@ -13,8 +13,8 @@
   "scripts": {
     "compile": "next build",
     "build:dev": "REACT_APP_ENV=development yarn compile",
-    "build:production": "REACT_APP_ENV=production yarn compile",
-    "build:integration": "REACT_APP_ENV=integration yarn compile",
+    "build:production": "REACT_APP_ENV=production  NODE_ENV=production yarn compile",
+    "build:integration": "REACT_APP_ENV=integration NODE_ENV=integration yarn compile",
     "dev": "next",
     "build": "next build",
     "start": "next start",

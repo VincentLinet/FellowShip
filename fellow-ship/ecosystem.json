@@ -1,0 +1,26 @@
+{
+  "apps": [
+    {
+      "name": "fellow-ship",
+      "log_date_format": "YYYY-MM-DD HH:mm Z"
+    }
+  ],
+  "deploy": {
+    "integration": {
+      "user": "root",
+      "host": "vps",
+      "ref": "origin/master",
+      "repo": "git@github.com:VincentLinet/FellowShip.git",
+      "path": "/home/fellowship/apps-integration/fellowship",
+      "post-deploy": "yarn && yarn build:integration"
+    },
+    "production": {
+      "user": "root",
+      "host": "vps",
+      "ref": "origin/master",
+      "repo": "git@github.com:VincentLinet/FellowShip.git",
+      "path": "/home/fellowship/apps/fellowship",
+      "post-deploy": "yarn && yarn build:production"
+    }
+  }
+}
