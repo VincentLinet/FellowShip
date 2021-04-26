@@ -12,7 +12,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:VincentLinet/FellowShip.git",
       "path": "/home/fellowship/apps-integration/fellowship",
-      "post-deploy": "cd fellow-ship && yarn && yarn build:integration"
+      "post-deploy": "cd fellow-ship && yarn && yarn build:integration && yarn export"
     },
     "production": {
       "user": "root",
@@ -20,7 +20,7 @@
       "ref": "origin/master",
       "repo": "git@github.com:VincentLinet/FellowShip.git",
       "path": "/home/fellowship/apps/fellowship",
-      "post-deploy": "cd fellow-ship && yarn && yarn build:production"
+      "post-deploy": "cd fellow-ship && yarn && yarn build:production && yarn export"
     }
   }
 }

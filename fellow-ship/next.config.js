@@ -6,7 +6,7 @@ module.exports = withCss({
       "/": { page: "/" },
       "/search": { page: "/search" },
       "/seances": { page: "/seances" },
-      "/adventurer/:pid": { page: "/adventurer" }
+      "/adventurer": { page: "/adventurer" }
     };
   }
 });

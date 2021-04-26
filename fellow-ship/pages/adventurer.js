@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import classnames from "classnames";
+import { useRouter } from "next/router";
 
 import DayPicker from "../src/components/objects/DayPicker";
 import HeadBar from "../src/components/layout/HeadBar";
@@ -245,58 +246,6 @@ const PLAYER = [
     alcohol: 0,
     sessions: [],
     characters: []
-  },
-  {
-    id: 110,
-    username: "",
-    firstname: "Martin",
-    lastname: "Leveque",
-    rate: 2.5,
-    picture: null,
-    title: "le mal incarné",
-    exp: 666,
-    role: [0],
-    classe: null,
-    niveau: null
-  },
-  {
-    id: 111,
-    username: "Airszi",
-    firstname: "Etienne",
-    lastname: "Roy",
-    rate: 3,
-    picture: null,
-    title: "try hardeur",
-    exp: 99999,
-    role: 0,
-    classe: "voleur",
-    niveau: 2
-  },
-  {
-    id: 112,
-    username: "Auvi",
-    firstname: "Victor",
-    lastname: "Imbo",
-    rate: 1.3,
-    picture: null,
-    title: "le mec chiant",
-    exp: 3000,
-    role: 0,
-    classe: "troubadour",
-    niveau: 2
-  },
-  {
-    id: 113,
-    username: "Arco",
-    firstname: "Loic",
-    lastname: "Janin",
-    rate: 2.3,
-    picture: null,
-    title: "le rageux",
-    exp: 1234,
-    role: 0,
-    classe: "cordonnier",
-    niveau: 3
   }
 ];
 
@@ -304,7 +253,11 @@ const FOODS = ["Food", "Neutral", "Fast"];
 const SMOKE = ["Smoker", "Neutral", "Aerial"];
 const DRINK = ["Alcohol", "Neutral", "Sober"];
 
-const App = ({ player, ...props }) => {
+const App = ({ ...props }) => {
+  const { asPath } = useRouter();
+  const id = Number(asPath.split("/")[2]);
+  const [player] = PLAYER.filter((player) => player.id === id);
+  if (!player) return null;
   const rest = player.rate - Math.floor(player.rate);
   const half = rest > 0.25 && rest <= 0.75;
   const star = rest > 0.75;
@@ -466,11 +419,7 @@ const App = ({ player, ...props }) => {
 };
 
 App.getInitialProps = async ({ asPath }) => {
-  const id = Number(asPath.split("/")[2]);
-  const [player] = PLAYER.filter((player) => player.id === id);
-  return {
-    player
-  };
+  return {};
 };
 
 export default App;
