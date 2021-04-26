@@ -33,6 +33,7 @@
 
 .chat__messages__message__picture {
   flex: 0 0 40px;
+  width: 40px;
   height: 40px;
   object-fit: cover;
   border-radius: 50%;

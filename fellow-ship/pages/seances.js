@@ -42,7 +42,7 @@ const SEANCES = [
         lastname: "Lovei",
         rate: 4,
         picture:
-          "https://s3-alpha-sig.figma.com/img/99fd/dec4/d3c07b33e7fccb906c8f0934efe8ff14?Expires=1619395200&Signature=fZ6n4fSk3cXaoFATmKaOuRA954x-aSCJ0Rsre056Rn0Zb-4nkPU3IQbGLqyU80bTi6PDkf1dwbYGE~TaFQS8KklkJyBapoNw3q0NRfD-jrbMTjHAtYKAIFWKnYq6GIWMyKPDDXHeHdxzc8X2fvEUMdHBEP9lS15orCVj3AaqflZG5QURF~0YmVXa48yOFmomjC7~pDHhVsUskQVzxLeC32eVFfb734eKN567CW9kjY4s47VjdcE1fRPSxu3yEe15jQOIFU4IYs5JT-6Tmx4am~Lpeuduy2iyh8mkxtlm2x3tkwLxwdlc5BxrmieYD94cWV4QsBdglfVDsavqpmSCgg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://cdna.artstation.com/p/assets/images/images/036/627/258/4k/daryl-tan-jet-scream-moth.jpg?1618190503",
         description: "",
         exp: 100,
         role: 0,
@@ -78,7 +78,7 @@ const SEANCES = [
         lastname: "Soutiret",
         rate: 4.4,
         picture:
-          "https://s3-alpha-sig.figma.com/img/00fe/c956/307a8498fbc437786e2ea90e63fa7937?Expires=1619395200&Signature=W2hjVwdmd4rv64Pt6viRzzBDEP6FdymnsfztaTYiBJsorExuED0ob9gyeyb-zICGsdB93NaQGtgGu2oBQj7fAWbpMwmeZLS~2uvlRVzn1bgE0d0Io5vTrBFVV7CY17h88zR2tStvSpvNZiurDN4yNNZTnjB2t~sqryc6FUEfScSiJkUxyzI5G1lloTT~0b4e-6f5WPlHRTziYFb66ytWaQMK2lkPAN3OcOrHmWoDqTb3qnAjCzWW~sphLUneAobYs4eKc9zX2h5wg7oQlRoGOIWFsv8iodlEqL5~8~ZtM~UKBTASvFU0U3Apqa4ezsFbb3fhcqv~fgKHoE2OUgQ7UA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://cdnb.artstation.com/p/assets/images/images/036/827/371/large/minovo-wang-41102.jpg?1618746499",
         description: "",
         exp: 1000,
         role: 0,
@@ -96,7 +96,7 @@ const SEANCES = [
         lastname: "Petit",
         rate: 4.5,
         picture:
-          "https://s3-alpha-sig.figma.com/img/c9ec/f337/d0ea816dce427e3890a229bf09523a5b?Expires=1619395200&Signature=FFwWMweoDg0kNoRWFB14jCj6enGokwSXIOdkbTjR6dk-QkirTTQXpx5wAkjFEpdPLaqAWEHXUEZ55WlH1bZ1IOrVaWhLawqrhe2CFWKtRq3EvuJamFB1IaNFvvY1UITCXJ2lWYGW~ftCHETIi5I7P957omtInva0y4KQK2s2J~BeTGGXk-nCxAwXHfFQ-dZnpTT7SIRpn0SQzWSyissG6ehP0vRVgkqhLzuRp7Vmi8zgBobviYsz370QECD-9p7wBvHoCqYqNk8ambig0RlzXAuNCF14mNCzd27SlxurIZ4r1P3OBNNaFb-LNTyUvQyeONrKjkvmVpS80x0JxP07Cg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+          "https://cdnb.artstation.com/p/assets/images/images/036/643/831/large/alexandr-leskinen-17s.jpg?1618464669",
         description: "",
         exp: 1000,
         role: 0,
@@ -113,8 +113,7 @@ const SEANCES = [
         firstname: "Yvonne",
         lastname: "Reine",
         rate: 5,
-        picture:
-          "https://s3-alpha-sig.figma.com/img/93df/4255/d957f18c194bd625cc38f4089f0dd0f9?Expires=1619395200&Signature=IUhZwc5jvQxOp12WBQmFIlfkxPosojBwUGMjw9CnboL6aacdjJsJHtAyGRcePPsxHqAN-q50p26SlWxnbAWAERx1eqUudmwCVusbbLqVhJJRAomYepxNVJP3Lv2whdep8-osREC0QWAzskc4dCnaZGiMG~sX7eCyZu45djR7knDI9ILA5jH5u33hxaOPN~oUx5P9UnusMPiVHqYFKzcVtUvqvd7DQx1lFyPn3HmI6UDVFDyRsci9HacQRf1YSlXlqnXVCfK1T99Oy4oX1fkP4wWcczBrwJNyYfstyJQznVy-Y-M5GVogvVxEj5e3Nl~1ZhpM-JclZkh55VXN7uXx9A__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA",
+        picture: "https://cdna.artstation.com/p/assets/images/images/031/342/846/4k/kan-liu-666k-manyue.jpg?1603333242",
         description: "",
         exp: 1298,
         role: 0,
