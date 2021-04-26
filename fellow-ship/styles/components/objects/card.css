@@ -8,6 +8,12 @@
   background-color: #ffffff;
   border: 1px solid #cccccc;
   cursor: pointer;
+  transition: border-color 0.16s ease-in-out, box-shadow 0.16s ease-in-out;
+}
+
+.card:hover,
+.card.card__price:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card.card__price {
@@ -29,7 +35,7 @@
   object-fit: cover;
   height: 300px;
   width: 300px;
-  border-radius: 16px 16px 0 0;
+  border-radius: 13px 13px 0 0;
 }
 
 .card__price .card__picture__image {
@@ -43,6 +49,7 @@
   font-size: 24px;
   font-weight: bold;
   border-radius: 0 0 8px 8px;
+  transition: background-color 0.16s ease-in-out;
   z-index: 2;
 }
 

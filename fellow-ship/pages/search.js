@@ -1,5 +1,8 @@
 import React from "react";
+import { useReducer } from "react";
 import Head from "next/head";
+
+import { FiltersContext, reducer, initialFilters, SET_CATEGORY, SET_NUMBER } from "../src/controllers/search-context";
 
 import HeadBar from "../src/components/layout/HeadBar";
 import Content from "../src/components/layout/Content";
@@ -63,6 +66,8 @@ const CARDS = [
 ];
 
 const App = ({ cards, ...props }) => {
+  const [filters, dispatch] = useReducer(reducer, initialFilters);
+
   return (
     <>
       <Head>
@@ -72,7 +77,9 @@ const App = ({ cards, ...props }) => {
       <div className="app">
         <HeadBar />
         <Content>
-          <Filters />
+          <FiltersContext.Provider value={{ filters, dispatch }}>
+            <Filters />
+          </FiltersContext.Provider>
           <Results cards={cards} />
         </Content>
       </div>

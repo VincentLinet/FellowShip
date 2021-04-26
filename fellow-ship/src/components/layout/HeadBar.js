@@ -12,8 +12,6 @@ const HeadBar = ({ ...props }) => {
   const [signing, setSigning] = useState(false);
   const [logged, setLogged] = useState(false);
 
-  console.log(signing);
-
   const { replace, prefetch } = useRouter();
   useEffect(() => {
     prefetch("/");
@@ -21,15 +19,13 @@ const HeadBar = ({ ...props }) => {
 
   const toggleDialog = (state) => () => setSigning(state !== undefined ? state : !signing);
   const toggleLog = (state) => () => setLogged(state !== undefined ? state : !logged);
+  const cancelSignIn = () => toggleDialog(false);
 
   const sign = async (body) => {
     const { error, user } = await login(body);
-    if (error) {
-      console.log(error);
-      return;
-    }
+    if (error) return console.log(error);
     toggleLog();
-    store.user = user.name;
+    store.user = user;
     toggleSigning();
     replace("/");
   };
@@ -51,7 +47,7 @@ const HeadBar = ({ ...props }) => {
           Sign In
         </Button>
       </div>
-      <SignIn toggle={toggleDialog} sign={sign} open={signing} />
+      <SignIn cancel={cancelSignIn} sign={sign} open={signing} />
     </div>
   );
 };

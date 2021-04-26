@@ -1,9 +1,25 @@
 import React from "react";
 
+import CaptainIcon from "./CaptainIcon";
+import DrinkIcon from "./DrinkIcon";
+import FoodIcon from "./FoodIcon";
+import MenuIcon from "./MenuIcon";
+import SaberIcon from "./SaberIcon";
 import SearchIcon from "./SearchIcon";
+import SmokeIcon from "./SmokeIcon";
+import StarIcon from "./StarIcon";
+import StarHalfIcon from "./StarIcon";
 
 export default {
-  SearchIcon
+  CaptainIcon,
+  DrinkIcon,
+  FoodIcon,
+  MenuIcon,
+  SaberIcon,
+  SmokeIcon,
+  SearchIcon,
+  StarIcon,
+  StarHalfIcon
 };
 
 export const RefreshIcon = ({ ...props }) => (
@@ -150,5 +166,29 @@ export const DeleteIcon = ({ ...props }) => (
       fill="currentColor"
       d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z"
     />
+  </SVGIcon>
+);
+
+export const SaberIcon = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path
+      fill="currentColor"
+      d="M21.08.29c-.21-.16-2.38,3-4.54,5.67-.22.27.09,1.35.12,1.63s-.59-.33-.75-.45a.25.25,0,0,0-.4.06l-.09.11c-1.86,2.2-4.45,5-5.51,6.08A2.53,2.53,0,0,0,6.56,14c-.29.3.34,1,1.14,1.83L3.12,20.65a3.07,3.07,0,0,1-.21-.37.42.42,0,0,0-.68-.07c-.27.32.61,1.7,1.44,2.42a4.54,4.54,0,0,0,5.44.29c2.39-1.8,3.46-4.23,3-6.35A3,3,0,0,0,12,16.1a15.82,15.82,0,0,0,1.84-1h0a.41.41,0,0,0,.18-.27c0-.09-.33-1-.25-1.13s.76.49.83.64.19.15.35.05c.88-.59,1.84-1.28,2.75-2,.25-.32.16-2.42.28-2.44s.63,1.08.71,1.23.21.18.36,0A9.7,9.7,0,0,0,21.1,8.72C22.6,5.77,21.33.48,21.08.29ZM8.28,21.67c-1.6,1.53-2.94,1.43-3.89.51-.08-.08-.16-.15-.23-.23l5.1-4.49a4.25,4.25,0,0,1,.64.87C10.23,18.94,9.88,20.14,8.28,21.67Z"
+    />
+  </SVGIcon>
+);
+
+export const CaptainIcon = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path
+      fill="currentColor"
+      d="M19.44,12.16c-1-.81-1.57-3.41-4.38-4.68a6.55,6.55,0,0,0-2.73-.57h-.66a6.55,6.55,0,0,0-2.73.57c-2.81,1.27-3.35,3.87-4.38,4.68-1.39,1.09-4.45,0-4.45,0,0,4.28,3.29,4.93,3.29,4.93H20.6s3.29-.65,3.29-4.93C23.89,12.16,20.83,13.25,19.44,12.16ZM13.9,13.65a.35.35,0,0,1-.55.36.62.62,0,0,1-.17-.63L12,12.58l-1.18.8a.62.62,0,0,1-.17.63.35.35,0,0,1-.55-.36c-.4.12-.67-.05-.67-.36s.45-.57,1.06-.26c.25-.16.62-.46,1-.78l-1.1-.75c-.48.31-1-.06-1-.34s.29-.35.65-.28a1,1,0,0,1-.16-.66.36.36,0,0,1,.67-.11.76.76,0,0,1,.17.66L12,11.84l1.23-1.07a.76.76,0,0,1,.17-.66.36.36,0,0,1,.67.11,1,1,0,0,1-.15.66c.35-.07.6,0,.64.28s-.49.65-1,.34l-1.1.75c.39.32.77.62,1,.78.61-.31,1.05,0,1.06.26S14.3,13.77,13.9,13.65Z"
+    />
+  </SVGIcon>
+);
+
+export const StarIcon = ({ ...props }) => (
+  <SVGIcon {...props}>
+    <path fill="currentColor" d="M12,18.9l7.4,4.5l-2-8.4L24,9.3l-8.6-0.7L12,0.6L8.6,8.5L0,9.3L6.5,15l-2,8.4L12,18.9z" />
   </SVGIcon>
 );

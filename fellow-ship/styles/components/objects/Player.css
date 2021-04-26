@@ -1,99 +1,159 @@
-.player{
-    width: 100%;
-    height: auto;
-    background: #FFFFFF;
-    border: 2px solid #DDDDDD;
+.player {
+  position: relative;
+  font-family: Roboto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.16s ease-in-out;
 }
 
-.player .player__picture{
-    float: left;
-    width: 50px;
-    height: 100px;
-    background: #f30c3b;
-    margin-right: 10px;
+.player:hover,
+.player.selected {
+  background-color: #00a99d;
 }
 
-.player .player__info{
-    height: 100px;
-    padding-left: 10px;
+.player .player__picture {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.player .player__info .player__info__username{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 17px;
-    line-height: 24px;
-    padding: 5px;
-
-    color: #00A99D;
+.player .player__info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.player .player__info .player__info__name{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #333333;
+.player .player__detail {
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.player .player__info .player__info__classe{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-    padding: 5px;
-
-    color: #555555;
-    opacity: 0.5;
+.player .player__info .player__info__menu-icon {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 24px;
+  height: 24px;
+  color: #333333;
+  transition: color 0.16s ease-in-out, background-color 0.16s ease-in-out;
+  border-radius: 50%;
 }
 
-.player .player__info .player__info__experience{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 16px;
-
-    color: #555555;
-
-    mix-blend-mode: normal;
+.player .player__info .player__info__menu-icon:hover {
+  background-color: #ffffff50;
 }
 
-.player .player__detail{
-    /*width: 100%;*/
-    /*height: 50px;*/
-    padding: 5px;
+.player .player__info .player__info__menu-icon:hover .player__info__menu {
+  display: flex;
 }
 
-.player .player__detail .player__detail__classe{
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 16px;
-
-    color: #333333;
-    mix-blend-mode: normal;
+.player .player__info .player__info__menu {
+  position: absolute;
+  display: none;
+  left: 100%;
+  top: -4px;
+  width: 180px;
+  padding-left: 2px;
+  z-index: 1;
 }
 
-.player.selected{
-    background: #00A99D;
+.player .player__info .player__info__menu-icon .player__info__menu__inner {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
 }
 
-.player.selected .player__info .player__info__username{
-    color: #FFFFFF;
+.player .player__info .player__info__menu__option {
+  padding: 0 5px;
+  transition: color 0.16s ease-in-out, background-color 0.16s ease-in-out;
 }
 
-.player.selected .player__info .player__info__classe{
-    color: #DBFFFC;
-    opacity: 1;
+.player .player__info .player__info__menu__option.player__info__menu__option--warned {
+  color: #ec407a;
 }
 
-.player.selected .player__info .player__info__experience{
-    color: #DBFFFC;
-    opacity: 1;
+.player .player__info .player__info__menu__option:hover {
+  background-color: #00a99d;
+  color: #ffffff;
+}
+
+.player .player__info .player__info__menu__option.player__info__menu__option--warned:hover {
+  background-color: #ec407a;
+  color: #ffffff;
+}
+
+.player .player__info .player__info__username {
+  font-weight: bold;
+  color: #00a99d;
+  transition: color 0.16s ease-in-out;
+}
+
+.player:hover .player__info__username,
+.player.selected .player__info__username {
+  color: #ffffff;
+}
+
+.player .player__info .player__info__name {
+  color: #333333;
+}
+
+.player .player__info .player__info__classe {
+  color: #555555;
+  opacity: 0.5;
+  transition: color 0.16s ease-in-out;
+}
+
+.player:hover .player__info__classe,
+.player.selected .player__info__classe {
+  color: #dbfffc;
+}
+
+.player .player__info .player__info__experience {
+  color: #555555;
+  transition: color 0.16s ease-in-out;
+}
+
+.player:hover .player__info .player__info__experience {
+  color: #ffffff;
+}
+
+.player .player__detail {
+  color: #555555;
+  padding: 0 10px 10px;
+  transition: color 0.16s ease-in-out;
+}
+
+.player:hover .player__detail {
+  color: #ffffff;
+  padding: 0 10px 10px;
+}
+
+.player .player__detail .player__detail__classe {
+  flex: 1 0 100%;
+}
+
+.player__info__experiences {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+}
+
+.player__info__stars {
+  color: #fbb03b;
+}
+
+.player__info__stars > svg {
+  width: 12px;
+  height: 12px;
 }

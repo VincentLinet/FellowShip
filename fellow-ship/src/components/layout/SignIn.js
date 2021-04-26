@@ -4,7 +4,7 @@ import Button from "../objects/Button";
 import PopUp from "../objects/PopUp";
 import Input from "../objects/Input";
 
-const SignIn = ({ toggle, open, sign, ...props }) => {
+const SignIn = ({ cancel, open, sign, ...props }) => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
@@ -20,9 +20,12 @@ const SignIn = ({ toggle, open, sign, ...props }) => {
           <div className="bold-input__label">Email</div>
           <Input className="signin__email" placeholder="" changed={changedEmail} />
         </div>
-        <Input className="signin__password" placeholder="Password" hidden changed={changedPassword} />
+        <div className="bold-input">
+          <div className="bold-input__label">Password</div>
+          <Input className="signin__password" placeholder="" hidden changed={changedPassword} />
+        </div>
         <div className="signin__actions">
-          <Button kind="tertiary" action={toggle(false)}>
+          <Button kind="tertiary" action={cancel}>
             Cancel
           </Button>
           <Button kind="primary" action={connexion}>

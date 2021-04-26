@@ -6,7 +6,7 @@
 }
 
 .bold-input__label {
-  flex: 0 0 100px;
+  flex: 0 0 70px;
   display: flex;
   align-items: center;
   background-color: #00a99d;
@@ -16,5 +16,7 @@
 }
 
 .bold-input > input {
+  flex: 1 1 auto;
   border: 1px solid #00a99d;
+  border-radius: 0 5px 5px 0;
 }

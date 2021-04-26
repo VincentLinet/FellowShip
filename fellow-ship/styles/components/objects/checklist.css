@@ -1,4 +1,7 @@
 .checklist {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
 }
 .checklist__item {
   display: flex;
@@ -14,9 +17,11 @@
   width: 10px;
   border-radius: 3px;
   border: 1px solid #00a99d;
+  transition: background-color 0.16s ease-in-out;
 }
 .checklist__item__text {
   padding: 1px 0 0 12px;
+  transition: color 0.16s ease-in-out;
 }
 
 .checklist__item--selected .checklist__item__box,

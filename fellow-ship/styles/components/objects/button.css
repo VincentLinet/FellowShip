@@ -1,9 +1,9 @@
 .button {
-  width: 130px;
-  height: 40px;
+  min-width: 110px;
+  height: 35px;
   color: #fff;
   border-radius: 5px;
-  padding: 10px 25px;
+  padding: 8px 12px;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
@@ -12,7 +12,7 @@
   position: relative;
   display: inline-block;
   outline: none;
-  margin: 5px;
+  margin: 0 5px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -71,7 +71,7 @@
 }
 
 .button.filled {
-  line-height: 38px;
+  line-height: 35px;
   padding: 0;
   border: none;
 }

@@ -1,0 +1,258 @@
+.adventurer {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  color: #333333;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.adventurer__inner {
+  justify-self: center;
+  flex: 1 1 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1200px;
+  min-width: 800;
+  background-color: #ffffff;
+}
+
+.adventurer__header {
+  flex: 0 0 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.adventurer__header__cover {
+  height: 200px;
+  max-width: 1200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.adventurer__header__profile {
+  position: absolute;
+  display: flex;
+  height: 110px;
+  padding: 0 50px;
+}
+
+.adventurer__header__picture__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 100px;
+  height: 110px;
+}
+
+.adventurer__header__picture__container--pro::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "PRO";
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #00a99d;
+  height: 15px;
+  width: 37px;
+  bottom: 3px;
+  border-radius: 4px;
+}
+
+.adventurer__header__picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #00a99d;
+  object-fit: cover;
+  background-color: #ffffff;
+}
+
+.adventurer__header__identity {
+  flex: 1 1 auto;
+  color: #ffffff;
+  padding: 0 30px;
+  text-shadow: 2px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.adventurer__header__name {
+  font-weight: 700;
+  font-size: 30px;
+  color: #00a99d;
+}
+
+.adventurer__header__title {
+  font-size: 30px;
+}
+
+.adventurer__content {
+  flex: 1 1 auto;
+  display: flex;
+  overflow-y: hidden;
+}
+
+.adventurer__sidebar {
+  overflow-y: auto;
+  flex: 0 0 300px;
+  border-right: 2px solid #dddddd;
+  scrollbar-width: thin;
+  scrollbar-color: #999999 transparent;
+  background-color: #dddddd;
+  padding: 0 2px 2px;
+}
+
+.adventurer__sidebar__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventurer__information {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #999999 transparent;
+  padding: 0 30px;
+}
+
+.adventurer__information__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.adventurer__skills {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 2px;
+  background-color: #ffffff;
+}
+
+.adventurer__skills__title {
+  font-weight: 600;
+  color: #00a99d;
+}
+
+.adventurer__skills__content {
+  display: flex;
+  align-items: center;
+}
+
+.adventurer__skills__icon {
+  color: #00a99d;
+  margin-right: 5px;
+}
+
+.adventurer__skills__content__stars {
+  color: #fbb03b;
+  display: flex;
+  align-items: center;
+}
+
+.adventurer__skills__content .day-picker {
+  margin: 8px 0 8px;
+}
+
+.adventurer__skills__content__stars > svg {
+  width: 14px;
+  height: 14px;
+}
+
+.adventurer__information__inner {
+  padding-bottom: 30px;
+}
+
+.adventurer__information__title {
+  padding-top: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #00a99d;
+  padding-bottom: 10px;
+}
+
+.adventurer__information__session {
+}
+.adventurer__information__session__header {
+  display: flex;
+  justify-content: space-between;
+}
+.adventurer__information__session__title {
+  color: #00a99d;
+  font-weight: 700;
+}
+.adventurer__information__session__running {
+  color: #555555;
+}
+.adventurer__information__session__info {
+  display: flex;
+}
+.adventurer__information__session__ruleset {
+  padding: 0 10px 0 0;
+}
+.adventurer__information__session__date {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+.adventurer__information__session__description {
+  text-align: justify;
+}
+
+.adventurer__information__character {
+}
+.adventurer__information__character__header {
+  display: flex;
+  justify-content: space-between;
+}
+.adventurer__information__character__title {
+  color: #00a99d;
+  font-weight: 700;
+}
+.adventurer__information__character__running {
+  color: #555555;
+}
+.adventurer__information__character__info {
+  display: flex;
+}
+.adventurer__information__character__job {
+  padding: 0 10px 0 0;
+}
+.adventurer__information__character__level {
+}
+.adventurer__information__character__ruleset {
+  color: #aaaaaa;
+  font-weight: 300;
+}
+
+.adventurer__sidebar:-webkit-scrollbar,
+.adventurer__information:-webkit-scrollbar {
+  width: 11px;
+}
+.adventurer__sidebar:-webkit-scrollbar-track,
+.adventurer__information:-webkit-scrollbar-track {
+  background: #fafafa;
+}
+.adventurer__sidebar:-webkit-scrollbar-thumb,
+.adventurer__information:-webkit-scrollbar-thumb {
+  background-color: #999999;
+  border-radius: 6px;
+  border: 3px solid transparent;
+}
+
+/* webkit browsers */
+.adventurer__sidebar::-webkit-scrollbar,
+.adventurer__sidebar::-webkit-scrollbar-thumb,
+.adventurer__information:-webkit-scrollbar,
+.adventurer__information:-webkit-scrollbar-thumb {
+  height: 26px;
+  border-radius: 13px;
+  background-clip: padding-box;
+  border: 10px solid transparent;
+}
+
+.adventurer__sidebar::-webkit-scrollbar-thumb,
+.adventurer__information:-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 0 10px;
+}

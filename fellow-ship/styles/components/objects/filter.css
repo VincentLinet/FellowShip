@@ -6,6 +6,11 @@
   font-weight: 600;
 }
 
+.filter__content {
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__padded .filter__content {
   padding: 12px 0 0;
 }

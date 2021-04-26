@@ -2,9 +2,15 @@
 @import "./initial/fonts.css";
 @import "./initial/app.css";
 
+@import "./pages/adventurer.css";
+@import "./pages/home.css";
+@import "./pages/seances.css";
+@import "./pages/search.css";
+
 @import "./components/layout/content.css";
 @import "./components/layout/filters.css";
 @import "./components/layout/headbar.css";
+@import "./components/layout/headpicture.css";
 @import "./components/layout/results.css";
 @import "./components/layout/sidebar.css";
 @import "./components/layout/seance.css";
@@ -13,6 +19,7 @@
 
 @import "./components/objects/boldinput.css";
 @import "./components/objects/card.css";
+@import "./components/objects/chat.css";
 @import "./components/objects/group.css";
 @import "./components/objects/player.css";
 @import "./components/objects/checklist.css";

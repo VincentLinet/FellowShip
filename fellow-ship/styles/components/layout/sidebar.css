@@ -1,6 +1,19 @@
 .sidebar {
-    /*position: absolute;*/
-    width: 15%;
-    height: 100%;
-    background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  width: 364px;
+}
+
+.sidebar__inner {
+  width: 82px;
+  height: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+  z-index: 2;
+  transition: width 0.32s ease-in-out;
+}
+
+.sidebar__inner:hover {
+  width: 100%;
 }

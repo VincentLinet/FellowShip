@@ -1,0 +1,18 @@
+.groups {
+  display: flex;
+  flex-direction: column;
+  width: 364px;
+  height: 100%;
+}
+
+.groups > .group,
+.groups > .group > .group__picture {
+  height: 88px;
+}
+
+.groups .lists {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}

@@ -1,22 +1,15 @@
 import React from "react";
 
-import Input from "./Input";
-import SearchBar from "./SearchBar_";
-import { SearchIcon } from "./Icons";
+import Search from "../objects/Search";
 
-const HeadBar = ({ ...props }) => (
+const HeadPicture = ({ ...props }) => (
   <div className="head-picture">
-    <div className="head-picture__title">All around the World</div>
-    <div className="head-picture__subtitle">
-      with <b>YOU</b>
+    <div className="head-picture__title">Find your Adventure</div>
+    <div className="head-picture__subtitle">Become who you want, anywhere you are</div>
+    <div className="head-picture__search">
+      <Search placeholders={["D&D", "Lyon"]} />
     </div>
-    {/* <div className="head-picture__search">
-      <SearchBar placeholder="Country, Point of Interest, ..." />
-      <div className="head-picture__search__button">
-        <SearchIcon />
-      </div>
-    </div> */}
   </div>
 );
 
-export default HeadBar;
+export default HeadPicture;

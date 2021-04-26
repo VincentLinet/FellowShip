@@ -10,10 +10,17 @@
   margin: 3px 0;
   top: 0;
 }
+.scroll__number {
+  position: absolute;
+  left: 280px;
+  color: #00a99d;
+  font-weight: 600;
+}
 .scroll__bar__filled {
   position: absolute;
   height: 10px;
-  width: 64px;
+  /* width: 64px; */
+  width: 0;
   background-color: #00a99d;
   top: 3px;
 }
@@ -25,13 +32,15 @@
   height: 16px;
   width: 16px;
   top: 0;
+  cursor: pointer;
 }
-.scroll__cursor--left {
+.scroll__cursor--left,
+.scroll__cursor--right {
   left: -8px;
 }
-.scroll__cursor--right {
+/* .scroll__cursor--right {
   left: 56px;
-}
+} */
 /* .scroll__cursor--left {
   left: -8px;
 }
